@@ -22,20 +22,25 @@ list-style-type: none;
 /* ----- POPPINS FONT Link ----- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 .img-container {
-     display: inline-block;
-            margin-right: 10px;
-            display: flex;
-            overflow-x: auto; /* Add horizontal scrolling if needed */
-        }
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    overflow-x: auto; /* Add horizontal scrolling if needed */
+}
 
-        /* Optional styling for the image */
-        img {
-           
-            width: 180px; /* Adjust the width as needed */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 8px; /* Optional: Rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+/* Optional styling for the image */
+img {
+    margin-right: 10px; /* Adjust spacing between images */
+    width: 180px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure the last image doesn't get cut off by the container */
+.img-container img:last-child {
+    margin-right: 0; /* Remove margin for the last image */
+}
+
 /* ----- VARIABLES ----- */
 :root{
     --body-color: rgb(250, 250, 250);
