@@ -42,31 +42,54 @@ img {
 }
 
 /* ----- VARIABLES ----- */
-:root{
-    --body-color: rgb(250, 250, 250);
-    --color-white: rgb(255, 255, 255);
+:root {
+    /* Background and text colors */
+    --body-color: #000; /* Black background */
+    --text-color-primary: #fff; /* White for primary text */
+    --text-color-secondary: #ccc; /* Light grey for secondary text */
+    --deep-blue: #00008b; /* Deep blue color */
 
-    --text-color-second: rgb(68, 68, 68);
-    --text-color-third: rgb(135, 206, 235);
+    /* Element colors */
+    --first-color: #6b57e0; /* Purple */
+    --first-color-hover: #285bd4; /* Darker purple on hover */
 
-    --first-color: rgb(110, 87, 224);
-    --first-color-hover: rgb(40, 91, 212);
+    --big-color: #87CEEB; /* Sky blue */
+    --big-color-hover: #fff; /* White on hover */
 
-    --big-color: lightblue;
-    --big-color-hover: white;
+    --second-color: #00c9ff; /* Light blue */
+    --third-color: #c0a631; /* Gold */
 
-    --second-color: rgb(0, 201, 255);
-    --third-color: rgb(192, 166, 49);
-    --first-shadow-color: rgba(0, 0, 0, 0.1);
-
+    /* Shadow color */
+    --first-shadow-color: rgba(255, 255, 255, 0.2); /* Softer shadow color */
 }
 
 /* ----- BASE ----- */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+/* ------- BASE -------- */
+body {
+    background: var(--body-color); /* Black background */
+    color: var(--text-color-primary); /* White text */
+}
+
+/* Update specific elements with deep blue */
+h4 {
+    color: var(--deep-blue); /* Deep blue */
+}
+
+/* Update navigation bar with deep blue */
+nav {
+    background: var(--deep-blue); /* Deep blue */
+}
+
+/* Update footer box with deep blue */
+footer {
+    background: var(--deep-blue); /* Deep blue */
 }
 
 /* ----- SMOOTH SCROLL ----- */
@@ -102,6 +125,9 @@ html{
     border-radius: 10px;
     cursor: pointer;
     transition: .4s;
+}
+.no{
+color:grey;
 }
 .btn>i{
     margin-left: 10px;
@@ -267,6 +293,9 @@ nav{
 .icon:hover{
     color: var(--first-color);
 }
+p{
+color:white;
+}
 
 /* ----- FEATURED IMAGE BOX ----- */
 .featured-image{
@@ -366,6 +395,7 @@ h3{
 }
 .label1{
 align-items: center;
+
 padding-inline: 20px;}
 .about-info p{
     text-align: center;
@@ -428,7 +458,7 @@ padding-inline: 20px;}
     flex-direction: column;
     width: 40%;
     height: 250px;
-    background: var(--color-white);
+    background: var(--first-color);
     border-radius: 20px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
@@ -448,7 +478,7 @@ padding-inline: 20px;}
     content: "";
     position: absolute;
     bottom: -100%;
-    background: var(--second-color);
+    background: var(--first-color-hover);
     width: 100%;
     height: 100%;
     transition: .4s;
@@ -559,10 +589,12 @@ footer{
     row-gap: 30px;
     background: #F8F8F8;
     padding-block: 40px 60px;
+    color: #777;
 }
 .top-footer p{
     font-size: 25px;
     font-weight: 600;
+    
 }
 .middle-footer .footer-menu{
     display: flex;
@@ -667,6 +699,7 @@ footer{
     }
    .label1, .about-info, .contact-info{
         width: 100%;
+        
     }
     .project-container{
         justify-content: center;
@@ -760,6 +793,7 @@ r   .image, .image img{
         display: flex;
         justify-content: center;
         width: 100%;
+        
        
     }
  .about-info, .contact-info{
@@ -868,7 +902,7 @@ r   .image, .image img{
           <div class="row">
             <div class="col">
                 <div class="about-info">
-                    <h3>My introduction</h3>
+                    <h3 >My introduction</h3>
                     <p>Distinguished by a robust foundation as an SAP ABAP developer, I bring forth a proven track record spanning two years, underscored by a commitment to excellence and adaptability. Currently advancing my expertise through pursuit of a Master's in Data Science, I present a unique fusion of technical proficiency and analytical acumen.</p>
 <br>
 <p>With an unwavering dedication to precision and quality, I am poised to seamlessly transition into pivotal roles within the spheres of Data Science and Analytics. My multifaceted skill set positions me as a compelling candidate for opportunities in Data Science, Data Analysis, and SAP ABAP development. I stand ready to contribute innovative solutions, leveraging my diverse background to drive success in forward-thinking organizations.</p>
@@ -1067,17 +1101,17 @@ Currently pursuing a Master's in Data Science at Durham University, UK, speciali
 onclick="window.location.href='https://github.com/GudiDheeraj';">
                 <i class="uil uil-briefcase-alt"></i>
                 <h3>Personal</h3>
-                <label class="label1">Successfully completed over 10 personal projects</label>
+                <label class="label1"><p>Successfully completed over 10 personal projects</p></label>
             </div>
             <div class="project-box" onclick="window.location.href='https://www.springerprofessional.de/en/numerical-investigations-on-performance-of-triple-pipe-heat-exch/23677562';">
                 <i class="uil uil-users-alt"></i>
                 <h3>Publications</h3>
-                <label class="label1">Authored and published a conference paper in Springer.</label>
+                <label class="label1"><p>Authored and published a conference paper in Springer.</p></label>
             </div>
             <div class="project-box">
                 <i class="uil uil-award"></i>
                 <h3>Experience</h3>
-                <label class="label1">2+ Years in SAP ABAP</label>
+                <label class="label1"><p>2+ Years in SAP ABAP</p></label>
             </div>
           </div>
        </section>
@@ -1112,8 +1146,9 @@ onclick="window.location.href='https://github.com/GudiDheeraj';">
 
     <!-- --------------- FOOTER --------------- -->
     <footer>
+     
         <div class="top-footer">
-            <p>Dheeraj Gudi .</p>
+            <p class="nav-name">Dheeraj Gudi .</p>
         </div>
         <div class="middle-footer">
             <ul class="footer-menu">
@@ -1140,7 +1175,7 @@ onclick="window.location.href='https://github.com/GudiDheeraj';">
             <div class="icon" onclick="window.location.href='https://github.com/GudiDheeraj';"><i class="uil uil-github-alt"></i></div>
         </div>
         <div class="bottom-footer">
-            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Gudi Dheeraj</a> - All rights reserved</p>
+            <p class="no">Copyright &copy; <a href="#home" style="text-decoration: none;">Gudi Dheeraj</a> - All rights reserved</p>
         </div>
     </footer>
 
