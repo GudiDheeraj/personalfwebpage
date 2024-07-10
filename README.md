@@ -1,21 +1,35 @@
 Project Name
+
 A modern, responsive web page template with a clean design. It features a navigation bar, sections for featured content, an about page, project showcases, a contact form, and a footer. The design utilizes custom CSS and Unicons for icons.
 
 Table of Contents
+
 Introduction
+
 Installation
+
 Usage
+
 File Structure
+
 Detailed Code Explanation
+
 HTML
+
 CSS
+
 Customization
+
 Colors
+
 Fonts
+
 Images
+
 Contributing
-License
+
 Introduction
+
 This project is a template for a modern web page designed to be clean, simple, and responsive. It includes:
 
 A responsive navigation bar with logo and menu items
@@ -397,8 +411,3 @@ Copy code
 Contributing
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-Fork the Project
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-Push to the Branch (git push origin feature/AmazingFeature)
-Open a Pull Request
