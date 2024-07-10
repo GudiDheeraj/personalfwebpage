@@ -401,13 +401,5 @@ Copy code
 Images
 Replace the images in the root directory with your own images. Update the img tags in the index.htm file accordingly.
 
-html
-Copy code
-<img src="cswam.png" alt="CSWAM" class="home__img">
-<img src="csww.png" alt="CSWW" class="home__img">
-<img src="dheeraj.jpg" alt="Dheeraj" class="about__img">
-<img src="gcp2.png" alt="GCP2" class="project__img">
-<img src="gcp.png" alt="GCP" class="project__img">
-Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
 
