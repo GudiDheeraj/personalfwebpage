@@ -33,86 +33,165 @@ Introduction
 This project is a template for a modern web page designed to be clean, simple, and responsive. It includes:
 
 A responsive navigation bar with logo and menu items
+
 A hero section with a background image and overlay text
+
 An about section with text content
+
 A projects section showcasing different works
+
 A contact section with a form
+
 A footer with social media icons
+
 Installation
+
 To get a local copy up and running, follow these steps.
 
 Prerequisites
+
 A web browser (e.g., Chrome, Firefox, Edge)
+
 Text editor (e.g., VSCode, Sublime Text)
+
 Git
+
 Clone the Repository
+
 Open your terminal.
+
 Clone the repository:
+
 bash
+
 Copy code
+
 git clone https://github.com/your-username/your-repository-name.git
+
 Navigate to the project directory:
+
 bash
+
 Copy code
+
 cd your-repository-name
+
 Open the HTML File
+
 Open the index.htm file in your preferred web browser to view the project.
 
+
+
 Usage
+
 This section describes how to use the project, how to navigate through different sections, and any interactive features.
 
+
+
 Navigating the Website
+
 Navigation Bar: Use the navigation bar to quickly jump to different sections of the page.
+
 Hero Section: The landing section with an eye-catching background image and welcome text.
+
 About Section: Learn more about the purpose or the team behind the project.
+
 Projects Section: View showcases of various projects with descriptions and links.
+
 Contact Section: Fill out and submit the contact form to get in touch.
+
 Footer: Find social media links and other pertinent information.
+
 File Structure
+
 Copy code
+
+
+
 your-repository-name/
+
 ├── cswam.png
+
 ├── csww.png
+
 ├── dheeraj.jpg
+
 ├── gcp2.png
+
 ├── gcp.png
+
 ├── index.htm
+
 └── README.md
+
 index.htm
+
 This is the main HTML file containing the structure of the web page. It includes sections like the navigation bar, featured content, about section, projects, and contact form.
 
+
+
 Detailed Code Explanation
+
 HTML
+
 The index.htm file is structured as follows:
 
+
+
 html
+
 Copy code
+
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
+
+    <head>
+    
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <meta name="description" content="Modern web page template">
+    
     <title>Project Name</title>
+    
     <link rel="stylesheet" href="assets/css/styles.css">
+    
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
-</head>
-<body>
+</he
+    ad>
+<bod
+    y>
+    
     <!-- Navigation -->
+    
     <header class="header" id="header">
+    
         <nav class="nav container">
+        
             <a href="#" class="nav__logo">LOGO</a>
+            
             <div class="nav__menu" id="nav-menu">
+            
                 <ul class="nav__list">
+                
                     <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    
                     <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
+                
                 <div class="nav__close" id="nav-close"><i class="uil uil-times"></i></div>
             </div>
+            
             <div class="nav__toggle" id="nav-toggle"><i class="uil uil-apps"></i></div>
+        
         </nav>
+    
     </header>
 
     <!-- Main Content -->
